@@ -4,27 +4,27 @@
 
 class Solution {
 public:
-    void generate(int leftNum, int rightNum, string s, vector<string> &ret)  
+    void generate_recursion(int left_num, int right_num, string s, vector<string> &ret)  
     {  
-        if(leftNum==0 && rightNum==0)  
+        if(left_num == 0 && right_num == 0)  
         {  
             ret.push_back(s);  
         }  
-        if(leftNum > 0)  
+        if(left_num > 0)  
         {  
             // if there is left bracket, we can directly add it to the end of the string. 
-            generate(leftNum-1, rightNum, s+'(', ret);  
+            generate_recursion(left_num - 1, right_num, s+'(', ret);  
         }  
-        if(rightNum>0 && leftNum<rightNum)  
+        if(right_num > 0 && left_num < right_num)  
         {  
             // if there is right bracket, we need to check make sure there is more left bracket in s than right bracket.
-            generate(leftNum, rightNum-1, s+')', ret);  
+            generate_recursion(left_num, right_num - 1, s+')', ret);  
         }  
     } 
 
     vector<string> generateParenthesis(int n) {
         vector<string> ret;
-        generate (n, n, "", ret);
+        generate_recursion(n, n, "", ret);
         return ret;
     }
 };
