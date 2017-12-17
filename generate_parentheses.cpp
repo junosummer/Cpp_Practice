@@ -1,5 +1,6 @@
 // LeetCode Problem 22 Generate Parenthese
 // Given n pairs of parentheses, write a function to generate all combinations of well-formed parentheses.
+// Recursion
 
 class Solution {
 public:
