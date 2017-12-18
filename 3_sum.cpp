@@ -46,7 +46,6 @@ public:
         {
             return ret;
         }
-        int three_sum = 0;
         for (int i = 0; i < len-2; i++)
         {
             if (i == 0 || (i > 0 && nums[i] != nums[i-1])) // make sure there is no duplicate.
