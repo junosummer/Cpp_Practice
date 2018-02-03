@@ -1,6 +1,6 @@
 # Leetcode Problem 36 Valid Sudoku
 
-# Solution in C++ may be uploaded later.
+# Solution in C++ is also uploaded. See valid_sudoku_cpp.cpp
 
 # Determine if a Sudoku is valid, according to: Sudoku Puzzles - The Rules.
 # The Sudoku board could be partially filled, where empty cells are filled with the character '.'.
